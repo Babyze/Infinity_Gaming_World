@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Sims 3 - Infinity Gaming World</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A Community Of Gaming - Infinity Gaming World!">
+    <meta name="keywords" content="game,gtav,hot-game,infinity,bf5,bf1">
+    <meta name="author" content="Dang Huynh Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="../../images/icon/ico.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/Infinity.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav id="sidebar-game">
+            <div id="dismiss">
+                <i class="fas fa-times"></i>
+            </div>
+            <p>Game Category</p>
+            <div id="accordionGame">
+                <ul class="nav flex-column" id="accordion">
+                    <li>
+                        <a data-toggle="collapse" href="#brandsgame" aria-expanded="false" aria-controls="brandsgame">BRANDS  <i class="fa fa-plus"></i></a>
+                        <ul id="brandsgame" class="collapse list-unstyled" data-parent="#accordionGame">
+                            <li>
+                                <a href="../steam-game.html"><img src="../../images/icon/steam.png" /> STEAM GAME</a>
+                            </li>
+                            <li>
+                                <a href="../origin-game.html"><img src="../../images/icon/origin.png" /> ORIGIN GAME</a>
+                            </li>
+                            <li>
+                                <a href="../origin-game.html"><img src="../../images/icon/Uplay-icon.png" /> UPLAY GAME</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#anotherPlatform" aria-expanded="false" aria-controls="anotherPlatform">Another Platform  <i class="fa fa-plus"></i></a>
+                        <ul id="anotherPlatform" class="collapse list-unstyled" data-parent="#accordionGame">
+                            <li>
+                                <a href="../steam-game.html"><img src="../../images/icon/pubg.png" /> PUBG</a>
+                            </li>
+                            <li>
+                                <a href="../origin-game.html"><img src="../../images/icon/gtav.png" /> Pre-order Games</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- end game item -->
+        </nav>
+        <!-- end game navbar -->
+        <nav id="sidebar-giftcard">
+            <div id="dismiss">
+                <i class="fas fa-times"></i>
+            </div>
+            <p>Giftcard Category</p>
+            <div id="accordionGift">
+                <ul class="nav flex-column" id="accordion">
+                    <li>
+                        <a data-toggle="collapse" href="#steamgiftcard" aria-expanded="false" aria-controls="steamgiftcard">STEAM WALLET CODE  <i class="fa fa-plus"></i></a>
+                        <ul id="steamgiftcard" class="collapse list-unstyled" data-parent="#accordionGift">
+                            <li>
+                                <a href="../steam-game.html"><img src="../../images/icon/steam.png" /> STEAM CARD GLOBAL</a>
+                            </li>
+                            <li>
+                                <a href="../steam-game.html"><img src="../../images/icon/steam.png" /> STEAM CARD VIETNAM</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pscard" aria-expanded="false" aria-controls="pscard">PLAYSATION CARD  <i class="fa fa-plus"></i></a>
+                        <ul id="pscard" class="collapse list-unstyled" data-parent="#accordionGift">
+                            <li>
+                                <a href="../origin-game.html"><img src="../../images/icon/psn-edit.png" /> PSN US</a>
+                            </li>
+                            <li>
+                                <a href="../origin-game.html"><img src="../../images/icon/psn-edit.png" /> PSN JAPAN</a>
+                            </li>
+                            <li>
+                                <a href="../origin-game.html"><img src="../../images/icon/psn-edit.png" /> PSN SEA</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#othercard" aria-expanded="false" aria-controls="othercard">ANOTHER CARD  <i class="fa fa-plus"></i></a>
+                        <ul id="othercard" class="collapse list-unstyled" data-parent="#accordionGift">
+                            <li>
+                                <a href="../origin-game.html"><img src="../../images/icon/google_play.png" /> GOOGLE CARD</a>
+                            </li>
+                            <li>
+                                <a href="../steam-game.html"><img src="../../images/icon/Blizzard.png" /> BLIZZARD CARD</a>
+                            </li>
+                            <li>
+                                <a href="../origin-game.html"><img src="../../images/icon/xbox.png" /> XBOX CARD</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- end gift item -->
+        </nav>
+        <!-- end giftcard -->
+        <nav id="sidebar-search">
+            <div id="dismiss">
+                <i class="fas fa-times"></i>
+            </div>
+            <p>Search Anything</p>
+            <div id="accordionGame">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search anything. . ." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search <i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+        <!-- end search -->
+        <!-- Login / Register Form-->
+        <div class="modal fade" id="userLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal" role="document">
+                <!--Content-->
+                <div class="modal-content loginSignup">
+
+                    <!--Modal cascading tabs-->
+                    <div class="modal-c-tabs">
+
+                        <!-- Nav tabs -->
+                        <div class="row">
+                            <div class="col-10">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item loginform">
+                                        <a class="nav-link active" data-toggle="tab" href="#login" role="tab"><i class="fa fa-user mr-1"></i> Login</a>
+                                    </li>
+                                    <li class="nav-item loginform">
+                                        <a class="nav-link" data-toggle="tab" href="#register" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="closeform text-center" data-dismiss="modal">&times;</button>
+                            </div>
+                        </div>
+
+                        <!-- Tab panels -->
+                        <div class="tab-content">
+                            <!--Login-->
+                            <div class="tab-pane fade in show active" id="login" role="tabpanel">
+
+                                <!--Body-->
+                                <div class="modal-body">
+                                    <form action="#" method="POST">
+                                        <label>Email</label>
+                                        <div class="form-sm">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <i class="fa fa-envelope prefix input-group-text"></i>
+                                                </div>
+                                                <input type="email" id="email" class="form-control form-control-sm validate" placeholder="Your Email" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-sm">
+                                            <label>Password</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <i class="fa fa-lock prefix input-group-text"></i>
+                                                </div>
+                                                <input type="password" id="password" class="form-control form-control-sm validate" placeholder="Your Password" />
+                                            </div>
+                                        </div>
+                                        <div class="text-left forgot-password">
+                                            <a href="#">
+                                                <p>Forgot Password? </p>
+                                            </a>
+                                        </div>
+                                        <div class="text-right mt-2">
+                                            <button type="submit" class="btn btn-primary login w-25"><span>Sign In</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--Footer-->
+                                <div class="modal-footer">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#" class="btn btn-lg facebook btn-block"><i class="fab fa-facebook"></i>  Facebook</a>
+                                            </div>
+                                            <div class="col-2 orgame text-center">
+                                                <h3>OR</h3>
+                                            </div>
+                                            <div class="col-5">
+                                                <a href="#" class="btn btn-lg google btn-block"><i class="fab fa-google"></i>  Google</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Register -->
+                            <div class="tab-pane fade" id="register" role="tabpanel">
+
+                                <!--Body-->
+                                <div class="modal-body">
+                                    <form action="#" method="POST">
+                                        <div class="form-sm">
+                                            <label>Email</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <i class="fa fa-envelope prefix input-group-text"></i>
+                                                </div>
+                                                <input type="email" id="emailSignup" class="form-control form-control-sm validate" placeholder="Your Email" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-sm">
+                                            <label>Password</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <i class="fa fa-lock prefix input-group-text"></i>
+                                                </div>
+                                                <input type="password" id="passwordSignup" class="form-control form-control-sm validate" placeholder="Your Password" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-sm">
+                                            <label>Confirm Password</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <i class="fa fa-lock prefix input-group-text"></i>
+                                                </div>
+                                                <input type="password" id="passwordSignup2" class="form-control form-control-sm validate" placeholder="Your Password" />
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center form-sm mt-2">
+                                            <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--Footer-->
+                                <div class="modal-footer">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#" class="btn btn-lg facebook btn-block"><i class="fab fa-facebook-square"></i>  Facebook</a>
+                                            </div>
+                                            <div class="col-2 orgame">
+                                                <h3>OR</h3>
+                                            </div>
+                                            <div class="col-5">
+                                                <a href="#" class="btn btn-lg google btn-block"><i class="fab fa-google-plus-g"></i>  Google</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Login / Register Form-->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="../../index.html">
+                    <img src="../../images/logo/Infinity.png" />
+                </a>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <button type="button" id="sidebarGame" class="btn btn-link button">
+                        <img src="../../images/icon/gamepad-hover.png" />
+                        <p>GAMES</p>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" id="sidebarGiftcard" class="btn btn-link button">
+                        <img src="../../images/icon/wallet-hover.png" />
+                        <p>GIFT</p>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" id="sidebarSearch" class="btn btn-link button">
+                        <img src="../../images/icon/search-hover.png" />
+                        <p>SEARCH</p>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-toggle="modal" data-target="#userLogin" class="btn btn-link button">
+                        <img src="../../images/icon/login-hover.png" />
+                        <p>ACCOUNT</p>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" id="showFooter" class="btn btn-link button">
+                        <img src="../../images/icon/information-hover.png" />
+                        <p>FAQ</p>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Pc Menu -->
+        <div id="content">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mobile-menu">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../images/logo/Infinity-mobile.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Game
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../steam-game.html">Steam</a>
+                                <a class="dropdown-item" href="../origin-game.html">Origin</a>
+                                <a class="dropdown-item" href="../steam-game.html">Uplay</a>
+                                <a class="dropdown-item" href="../origin-game.html">Pre-Order</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gift Card
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../steam-game.html">Steam</a>
+                                <a class="dropdown-item" href="../steam-game.html">PSN</a>
+                                <a class="dropdown-item" href="../origin-game.html">Google</a>
+                                <a class="dropdown-item" href="../steam-game.html">Blizzard</a>
+                                <a class="dropdown-item" href="../origin-game.html">Xbox</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" data-toggle="modal" data-target="#userLogin" class="btn btn-link nav-link">Account</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about-us.html">FAQ</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    </div>
+            </nav>
+            <!-- End menu mobile -->
+            <div class="containfer-fluid">
+                <div class="container-fluid background">
+                    <div class="backgroundDetails">
+                        <div class="text-left Back">
+                            <a href="../origin-game.html"><i class="fas fa-angle-left"></i>  Back</a>
+                        </div>
+                        <div class="rightSocial">
+
+                            <a href="#comment">
+                                <div class="shareSocial">
+                                    <i class="fas fa-comments"></i>
+                                    <div class="shareComment">
+                                        <span class="badge badge-light">0</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="shareSocial">
+                                <a href="https://facebook.com" target="_blank">
+                                    <img src="../../images/icon/facebook.jpg" />
+                                </a>
+                            </div>
+                            <div class="shareSocial">
+                                <a href="https://twitter.com" target="_blank">
+                                    <img src="../../images/icon/twitter-2.png" />
+                                </a>
+                            </div>
+                            <div class="shareSocial">
+                                <a href="http://me.zing.vn" target="_blank">
+                                    <img src="../../images/icon/zing.jpg" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End task bar -->
+                    <div class="gameDetails">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="../../images/game/origin/sim-3.jpg" class="img-fluid" />
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Game Story</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">The Sims 3 is built upon the same concept as its predecessors. Players control their own Sims' activities and relationships in a manner similar to real life. The game play is open-ended and does not have a defined goal. Challenges occur randomly based on aspects of each Sim's lifestyle, such as relationships, skills and job. Career opportunities such as working overtime or completing special tasks can yield a pay raise, cash bonus, or relationship boost. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <h2>The Sims 3</h2>
+                                <h4>180.000 đ</h4>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <button type="button" class="btn btn-success w-75" data-toggle="modal" data-target="#buygame">BUY NOW</button>
+                                            </div>
+                                        </div>
+                                        <h5 class="card-title text-center"><i class="fas fa-shopping-cart"></i> 53 Keys Was Sold!</h5>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>Game Information</h5>
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Title</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>The Sims 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Category</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>In-Game Items</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Type</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Point</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Platform</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Origin</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Region restriction</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Global</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- End Game Information -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>System Requirements</h5>
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">OS:</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Windows 7 / 8 / 10 64 bit</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Processor:</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Intel Core i5-8100, AMD FX-6100, or better</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Memory:</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>8 GB RAM</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Graphics:</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>NVIDIA GTX 1050 Ti 2GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Storage:</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>35 GB available space</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- End SYSTEM REQUIREMENTS -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End game Details -->
+                    <div id="comment" class="comment-wrapper">
+                        <div class="card text-white">
+                            <div class="card-header"><i class="fas fa-comments"></i> Comment</div>
+                            <div class="card-body">
+                                <textarea class="form-control" placeholder="Write a comment..." rows="3"></textarea>
+                                <br>
+                                <button type="button" class="btn btn-info float-right">Post</button>
+                                <div class="clearfix"></div>
+                                <hr>
+                                <ul class="media-list">
+                                    <p class="text-center">Become a first comment here!</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End comment -->
+                </div>
+                <div class="modal fade" id="buygame" tabindex="-1" role="dialog" aria-labelledby="buygameSuccess" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="buygameSuccess">Buy Game The Sims 3 Success <i class="far fa-check-circle"></i></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <div class="check_mark">
+                                    <div class="sa-icon sa-success animate">
+                                        <span class="sa-line sa-tip animateSuccessTip"></span>
+                                        <span class="sa-line sa-long animateSuccessLong"></span>
+                                        <div class="sa-placeholder"></div>
+                                        <div class="sa-fix"></div>
+                                    </div>
+                                </div>
+                                Thank you for shopping! <i class="far fa-smile-wink"></i>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Body -->
+            <div class="container-fluid footerIndex">
+                <h4 class="text-center"><i class="fas fa-gamepad fa-spin"></i> Have fun, enjoy the game.</h4>
+            </div>
+            <div class="overlay"></div>
+            <footer id="footer-end">
+                <div class="row container-fluid">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4">
+                                <h5>CUSTOMER</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="../steam-game.html">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="../steam-game.html">Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="../steam-game.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h5>ABOUT INFINITY</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="../../about-us.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="../origin-game.html">Address</a>
+                                    </li>
+                                    <li>
+                                        <a href="../steam-game.html">Promote</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h5>PRODUCT</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="../steam-game.html">Steam Game</button>
+                                    </li>
+                                    <li>
+                                        <a href="../origin-game.html">Origin Game</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h5>FOLLOW US</h5>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <img src="../../images/icon/facebook.png" />
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <img src="../../images/icon/youtube.png" />
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <img src="../../images/icon/twitter.png" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h5>NEWSLETTER</h5>
+                                <form action="#" method="GET">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="emailSubscribe" placeholder="Your Email Address">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end Information Footer -->
+                <div id="copyright">
+                    <img src="../../images/logo/Infinity.png" />
+                    <p>All content and designs © 2018 Infinity, Inc. unless otherwise stated.</p>
+                </div>
+                <!-- End copyright -->
+            </footer>
+            </div>
+            </div>
+            <!-- End content -->
+        </div>
+        <!-- End container-fluid -->
+        <div class="overlay"></div>
+        <!-- jQuery - Slim version (=without AJAX) -->
+        <script src="../../js/jquery-3.3.1.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="../../js/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="../../js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller -->
+        <script src="../../js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <!-- Infinity JS -->
+        <script src="../../js/infinity.js"></script>
+</body>
+
+</html>
